@@ -117,11 +117,16 @@ public class Main {
 
         // Obtener las calificaciones del estudiante
         ArrayList<Double> calificaciones = registroCalificaciones.get(estudiante.getId());
-        if (calificaciones == null || calificaciones.isEmpty()) {
-            System.out.println("No se han registrado calificaciones para este estudiante.");
-        } else {
-            double promedio = calificaciones.stream().mapToDouble(Double::doubleValue).average().orElse(0.0);
-            System.out.println("El promedio de " + estudiante.getNombre() + " (" + estudiante.getId() + ") es: " + promedio);
+
+        try {
+            if (calificaciones == null || calificaciones.isEmpty()) {
+                System.out.println("No se han registrado calificaciones para este estudiante.");
+            } else {
+                double promedio = calificaciones.stream().mapToDouble(Double::doubleValue).average().orElse(0.0);
+                System.out.println("El promedio de " + estudiante.getNombre() + " (" + estudiante.getId() + ") es: " + promedio);
+            }
+        } catch (ArithmeticException e) {
+            System.out.println("Error al calcular promedio: " + e.getMessage());
         }
     }
 
