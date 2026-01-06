@@ -96,7 +96,47 @@ public class ArbolesBinariosEjercicio {
         raiz.izquierdo.izquierdo.derecho.derecho.izquierdo = new Nodo("                               T1.1.2.2.1");
         raiz.izquierdo.izquierdo.derecho.derecho.derecho = new Nodo("                               T1.1.2.2.2");
 
+        // Hijos de T1.1.1 (nivel 4)
+        raiz.izquierdo.izquierdo.izquierdo.izquierdo.izquierdo = new Nodo("                               T1.1.1.1.1");
+        raiz.izquierdo.izquierdo.izquierdo.izquierdo.derecho = new Nodo("                               T1.1.1.1.2");
 
+        raiz.izquierdo.izquierdo.izquierdo.derecho.izquierdo = new Nodo("                               T1.1.1.2.1");
+        raiz.izquierdo.izquierdo.izquierdo.derecho.derecho = new Nodo("                               T1.1.1.2.2");
+
+        // Hijos de T1.1.1 (nivel 4)
+        raiz.izquierdo.izquierdo.derecho.izquierdo.izquierdo = new Nodo("                               T1.1.2.1.1");
+        raiz.izquierdo.izquierdo.derecho.izquierdo.derecho = new Nodo("                               T1.1.2.1.2");
+
+        raiz.izquierdo.izquierdo.derecho.derecho.izquierdo = new Nodo("                               T1.1.2.2.1");
+        raiz.izquierdo.izquierdo.derecho.derecho.derecho = new Nodo("                               T1.1.2.2.2");
+
+        // Hijos de T1.1.1 (nivel 4)
+        raiz.derecho.derecho.izquierdo.izquierdo.izquierdo = new Nodo("                               T1.1.1.1.1");
+        raiz.derecho.derecho.izquierdo.izquierdo.derecho = new Nodo("                               T1.1.1.1.2");
+
+        raiz.derecho.derecho.izquierdo.derecho.izquierdo = new Nodo("                               T1.1.1.2.1");
+        raiz.derecho.derecho.izquierdo.derecho.derecho = new Nodo("                               T1.1.1.2.2");
+
+        // Hijos de T1.1.1 (nivel 4)
+        raiz.derecho.izquierdo.derecho.izquierdo.izquierdo = new Nodo("                               T1.1.2.1.1");
+        raiz.derecho.izquierdo.derecho.izquierdo.derecho = new Nodo("                               T1.1.2.1.2");
+
+        raiz.derecho.izquierdo.derecho.derecho.izquierdo = new Nodo("                               T1.1.2.2.1");
+        raiz.derecho.izquierdo.derecho.derecho.derecho = new Nodo("                               T1.1.2.2.2");
+
+        // Hijos de T1.1.1 (nivel 4)
+        raiz.derecho.izquierdo.izquierdo.izquierdo.izquierdo = new Nodo("                               T1.1.1.1.1");
+        raiz.derecho.izquierdo.izquierdo.izquierdo.derecho = new Nodo("                               T1.1.1.1.2");
+
+        raiz.derecho.izquierdo.izquierdo.derecho.izquierdo = new Nodo("                               T1.1.1.2.1");
+        raiz.derecho.izquierdo.izquierdo.derecho.derecho = new Nodo("                               T1.1.1.2.2");
+
+        // Hijos de T1.1.1 (nivel 4)
+        raiz.derecho.izquierdo.derecho.izquierdo.izquierdo = new Nodo("                               T1.1.2.1.1");
+        raiz.derecho.izquierdo.derecho.izquierdo.derecho = new Nodo("                               T1.1.2.1.2");
+
+        raiz.derecho.izquierdo.derecho.derecho.izquierdo = new Nodo("                               T1.1.2.2.1");
+        raiz.derecho.izquierdo.derecho.derecho.derecho = new Nodo("                               T1.1.2.2.2");
         imprimirArbol(raiz, 0);
     }
 }
